@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* I places a charset with the utf-8 to place the character that will be encoding, it will render the thousands of character codes. Then I did a font face to place the font family of each different type of text style so it can tell the browser the type of font it will render.*/
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.tff') format('truetype');
+    font-family: Grunge;
+    src: url('1942.woff') format('woff'),
+        url('1942.tff') format('truetype');
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('truetype');
+}
+
+/* 
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 1
+   
+   PHCT Typographic Style Sheet
+   Author: Evelyn Duartee
+   Date:   
+   
+   Filename: ph_styles.css
+
+*/
+/* Structural Styles */
+html {
+    background-color: hsl(91, 8%, 56%);
+}
+
+body {
+    background-color: hsl(58, 31%, 84%);
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+
+/* Navigation Styles */
+/* Section Styles */
+/* Description List Styles */
