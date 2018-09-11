@@ -5,13 +5,20 @@
     font-family: Champagne;
     src: url('cac_champagne.woff') format('woff'),
         url('cac_champagne.tff') format('truetype');
+}
+
+@font-face {
     font-family: Grunge;
     src: url('1942.woff') format('woff'),
         url('1942.tff') format('truetype');
+}
+
+@font-face {
     font-family: Dobkin;
     src: url('DobkinPlain.woff') format('woff'),
         url('DobkinPlain.ttf') format('truetype');
 }
+
 
 /* 
    New Perspectives on HTML5 and CSS3, 7th Edition
@@ -26,6 +33,7 @@
 
 */
 /* Structural Styles */
+/* The structure styles contained the main elements so they are all given a certain color, spacing and size so that the web browser will stylize the page the way you format it. For the body, I made the p a child of so that it could inherit its syles. */
 html {
     background-color: hsl(91, 8%, 56%);
 }
@@ -58,12 +66,14 @@ address {
 }
 
 /* Navigation Styles */
+/* The anchor tag was nested in the navigation so it will specify what element is being styled. The padding space to extend from 10px from the element's content to the border. */
 nav a {
     font-family: Trebuchet MS, Helvetica, sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+/* Every list is a child of an unordered list that is a child of nav inherits the color and decoration and it is formatted so for every link that has been visited, it has a specific color but no decoration. For where the navigation is hovered over, it changes it's appearance in color. */
 nav>ul>li>a:link,
 nav>ul>li>a:visited {
     color: white;
@@ -78,6 +88,7 @@ nav>ul>li>a:hover {
 }
 
 /* Section Styles */
+/* The secion.playbill sets the appearances of the 4 playbills that is an h1 element. */
 section.playbill h1 {
     font-size: 3em;
     font-weight: normal;
@@ -85,4 +96,49 @@ section.playbill h1 {
     padding: 20px 0px 10px 20px;
 }
 
+/* Each playbill is given an id with a background color, with every playbill, it also has an id for a font family where h1 is nested to specify the font-family and also the id identifies which color pertains to it's indivisual playbill. */
+section#play1 {
+    background-color: hsl(240, 100%, 88%);
+}
+
+section#play1 h1 {
+    font-family: Champagne, cursive;
+}
+
+section#play2 {
+    background-color: hsl(25, 88%, 73%);
+}
+
+section#play2 h1 {
+    font-family: Grunge, 'Times New Roman', Times, serif;
+}
+
+section#play3 {
+    background-color: hsl(0, 100%, 75%);
+}
+
+section#play3 h1 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+section#play4 {
+    background-color: hsl(296, 86%, 86%);
+}
+
+section#play4 h1 {
+    font-family: Dobkin, cursive;
+}
+
 /* Description List Styles */
+/* The dt and dd elements defines terms and names with a certain size, color and spacing. */
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
